@@ -2,21 +2,33 @@ const express=require("express");
 const app=express();
 const mongoose=require("mongoose");
 const Listing = require("./models/listing.js");
+const path =require("path");
+
+app.set("view engine","ejs");
+app.set("Views",path.join(__dirname,"views"));
+
+
+//index Route
+app.get("/listings",async(req,res)=>{
+  const allListing= await Listing.find({});
+  res.render("listings/index.ejs",{allListing});
+});
+
 
 
 //Sample testing route
-app.get("/testListing",async(req,res)=>{
-    let samplelisting =new Listing({
-    title:"my new villa",
-    description:"by the beach",
-    price:1200,
-    location:"calangote,Goa",
-    country:"india"
-   });
-    await samplelisting.save();
-    console.log("sample was saved");
-    res.send("successful testing");
-});
+// app.get("/testListing",async(req,res)=>{
+//     let samplelisting =new Listing({
+//     title:"my new villa",
+//     description:"by the beach",
+//     price:1200,
+//     location:"calangote,Goa",
+//     country:"india"
+//    });
+//     await samplelisting.save();
+//     console.log("sample was saved");
+//     res.send("successful testing");
+// });
 
 
 
