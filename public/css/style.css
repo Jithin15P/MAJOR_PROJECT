@@ -110,4 +110,11 @@
 .form-label{
     font-weight: 400;
 }
+.edit-btn{
+    background-color: #fe424d !important;
+    border: none!important;
+}
+.show-img{
+    height:30vh;
+}
  
