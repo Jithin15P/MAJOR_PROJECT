@@ -1,8 +1,6 @@
  body{
     font-family: "Plus Jakarta Sans", sans-serif !important;
-    font-optical-sizing: auto !important;
-    font-style: normal !important;
-  }
+     }
  
 
  .navbar{
@@ -66,5 +64,12 @@
 }
 
 .card-text p{
-    font-weight: 400;
+    font-weight: 400 !important;
+    color: #222222;
 }
+
+.listing-link{
+    text-decoration: none;
+}
+
+/* Card Effect */
