@@ -24,9 +24,16 @@ Wanderlust is a full-featured Airbnb clone built using Node.js, Express.js, Mong
 - **Map Integration:** Mapbox / Google Maps API
 - **Templating Engine:** EJS with EJS-Mate layouts
 
-## 📸 Screenshots
+ 
+## 🧑‍💻 Getting Started
 
-> *(Add screenshots of your homepage, listing page, review section, etc. here)*
+### Prerequisites
 
-## 📁 Project Structure
+- Node.js and npm
+- MongoDB installed locally or use MongoDB Atlas
+- Cloudinary account (for image uploads)
+- Mapbox or Google Maps API key
+
+ 
+
 
