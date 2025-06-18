@@ -7,7 +7,7 @@ const methodOverride=require("method-override");
 const ejsMate=require("ejs-mate");
 
 
-
+//middlewares
 app.set("view engine","ejs");
 app.set("Views",path.join(__dirname,"views"));
 app.use(express.urlencoded({extended:true}));
